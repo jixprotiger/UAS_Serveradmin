@@ -8,8 +8,8 @@ exit;
 echo "Sukses: Koneksi telah terbuat!" . PHP_EOL;
 echo "Host Information: " . mysqli_get_host_info($link) . PHP_EOL;
 $query = "SELECT * from Trucorp.users";
-$res = mysqli_query($link, $query);
-while($row = mysqli_fetch_array($res))
+$result = mysqli_query($link, $query);
+while($row = mysqli_fetch_array($result))
      {
         print_r($row);
      } 
